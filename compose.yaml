@@ -2,7 +2,7 @@ version: "3.8"  # Specifies the version of the Docker Compose file format.
 
 services:  # Defines the services (containers) to be created.
   database:  # Service name for the PostgreSQL database.
-    image: postgres:latest  # Uses the latest PostgreSQL image from Docker Hub.
+    image: postgres:17-alpine  # Uses the latest PostgreSQL image from Docker Hub.
     restart: always  # Automatically restarts the container if it stops.
     container_name: swiftchat_postgres  # Sets a specific name for the container.
     environment:  # Environment variables for PostgreSQL configuration.
